@@ -1,0 +1,65 @@
+* {
+    font-family: Raleway;
+}
+body {
+    background-color: #303030;
+}
+.btn-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button {
+    position: relative;
+    padding: 20px 30px;
+    overflow: hidden;
+    transition: border-radius 0s;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #f7284d;
+    border: none;
+    border-radius: 10px;
+}
+button:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-style: solid;
+    width: 0;
+    border-width: 14px;
+    border-color: #303030 rgba(255,255,255,0.4) rgba(255,255,255,0.4) #303030;
+    border: 0 0 5px 0;
+    transition: border-width .2s;
+}
+button:hover {
+    cursor: pointer;
+    transition-delay: .2s;
+}
+button:hover::before {
+    border-width: 0;
+}
+
+
+/*****Other styling apart from the button****/
+p {
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+span {
+    color: #f7284d;
+}
+
