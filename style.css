@@ -37,6 +37,8 @@ button:before {
 button:hover {
     cursor: pointer;
     transition-delay: .2s;
+    background: linear-gradient(60deg, rgb(28, 148, 254), purple
+	);
 }
 button:hover::before {
     border-width: 0;
